@@ -1,0 +1,132 @@
+ <!DOCTYPE html>
+        <html>
+            <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+            <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+            <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+            <!--[if gt IE 8]><!--> <html class="no-js"></html> <!--<![endif]-->
+                <head>
+                        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	                    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Graduation Announcement 2014</title>
+                                            <link href="_css/site.css" rel="stylesheet">
+
+                        			
+                       				 <script src="_js/jquery-1.7.2.min.js"></script>
+			    <script src="jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+                       				 <script src="jQueryAssets/jquery-ui-1.9.2.tabs.custom.min.js" type="text/javascript"></script>
+       				    <style>
+                                #gallery {
+	                                       float: left;
+	                                       width: 90px;
+	                                       margin-right: 30px;
+	                                       margin-left: 10px;
+	                                       border-right: white 1px dotted;
+}
+                                #gallery img {
+	                                       display: inline-block;
+	                                       margin: 0 0 10px 0;
+	                                       border: 1px solid rgb(0,0,0);
+}
+                                #photo {
+	                                       margin-left: 150px;
+	                                       position: relative;
+}
+                                #photo img {
+	                                       position: absolute;
+}
+                                     </style>
+                        <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+                        <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+                        <link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+                    <script>
+                                $(document).ready(function() {
+		
+                                $('#gallery img').each(function(i) {
+	                               var imgFile = $(this).attr('src');
+	                               var preloadImage = new Image();
+                                    var imgExt = /(\.\w{3,4}$)/;
+                                    preloadImage.src = imgFile.replace(imgExt,'_h$1');
+		
+	                                   $(this).hover(
+		                                  function() {
+			                             $(this).attr('src', preloadImage.src);
+		                              },
+		                                  function () {
+		                              var currentSource=$(this).attr('src');
+			                         $(this).attr('src', imgFile);
+	                       }); // end hover
+                                }); // end each
+	
+                                   
+	                                       
+                                    $('#gallery a').click(function(evt) {
+                                        evt.preventDefault();    
+                                            var imgPath = $(this).attr('href');
+                                            var oldImage = $('#photo img');
+                                            var newImage = $('<img src="' + imgPath +'">');
+                                            newImage.hide();
+                                            $('#photo').prepend(newImage);
+                                            newImage.fadeIn(1000);
+                                            oldImage.fadeOut(1000,function(){
+                                                $(this).remove();
+                                            });// end fadeout
+                                    }); // end click
+                                            $('#gallery a:first').click();
+                                    
+	
+                                    }); // end ready
+                        </script>
+</head>
+                <body>
+                    <div class="wrapper">
+	                <div class="header">
+																	<p class="logo">Mario Cano's Graduation Announcement <i>&</i><i class="mm">Del<br>
+																																				Campo<br>
+																																				High</i>
+           
+                                                <span class="year">2014</span> </p>
+	</div>
+	               <div class="content">
+                   
+                   								<ul class="guestList">
+                                                            		<li><a href="inviteFrm.html">Guest List</a></li>
+                                                                                
+                                                            
+                                                            
+                                                            </ul>
+                   
+		           <div class="main">
+			                     <h1>Academic Excellence!</h1>
+																	
+<div id="gallery">
+  
+  <a href="images/large/4thEaster.jpg"><img src="images/small/4thEaster.jpg" width="70" height="70" alt="4th Easter" class="img-responsive"></a>
+    
+  <a href="images/large/5thGrAd.jpg"><img src="images/small/5thgrAd.jpg" width="70" height="70" alt="fifth grade" class="img-responsive"></a>
+  
+  <a href="images/large/blacknBrwn.jpg"><img src="images/small/blcknBrwn.jpg" width="70" height="70" alt="dark scene" class="img-responsive"></a>
+  
+  <a href="images/large/mariograd2.jpg"><img src="images/small/mariograd2.jpg" width="70" height="70" alt="effect scene" class="img-responsive"></a>
+  
+  <a href="images/large/blcktuxTwo.jpg"><img src="images/small/blcktuxTwo.jpg" width="70" height="70" alt="black tuxedo" class="img-responsive"></a>
+  
+  <a href="images/large/marioGradTwo.jpg"><img src="images/small/marioGradTwo.jpg" width="70" height="70" alt="Graduation scene" class="img-responsive"></a>
+    
+    <a href="images/large/gradHat.jpg"><img src="images/small/gradHat.jpg"  width="70" height="70" alt="Graduation Hat" class="img-responsive"></a>
+</div>
+			<div id="photo"></div>
+		</div>
+	</div>
+	<div class="footer">
+        
+		<p><a href="https://www.facebook.com/webtronixDesigns?ref=hl">WEBTRONIX DESIGNS</a>
+            by Mario C.<br>
+            Design referenced from <a href="http://oreilly.com/">
+            O'Reilly Media, Inc</a>.
+        </p>
+	</div>
+</div>
+
+        </body>
+</html>

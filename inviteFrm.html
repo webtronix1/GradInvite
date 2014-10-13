@@ -1,0 +1,141 @@
+ <!DOCTYPE html>
+<html>
+          <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+            <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+            <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+            <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+                <head>
+                        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	                    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+	                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Graduation Announcement Form</title>
+                               <link href="_css/site.css" rel="stylesheet">
+                    
+   
+                    
+                    
+</head>
+    
+   
+    
+    
+    
+    
+
+<body>
+		                          <div class="wrapper">
+			                        <fieldset>
+                
+			                        <legend>Guest Invites</legend>
+						                  <form name="catwebformform35154" method="post" onsubmit="return checkWholeForm35154(this)" enctype="multipart/form-data" action="http://gradanncmnt.businesscatalyst.com/FormProcessv2.aspx?WebFormID=146273&OID={module_oid}&OTYPE={module_otype}&EID={module_eid}&CID={module_cid}">
+  
+				                      <h2>Guest Invitation List Information</h2>
+					                                                    <p>Please fill out required information so we can know if<br>
+					                                                      you will attend our child's<a href="https://www.sanjuan.edu/DelCampo.cfm?subpage=185020"> High School Graduation Ceremony.</a><br>                         Just a reminder we need to know by May 1st so we can<br>
+                                                                  get you a ticket into the Memorial Auditorium. </p>
+      
+                            <span class="req">*</span>Required<br>                                                                                                   <table class="webform" cellspacing="0" cellpadding="2" border="0">
+                            
+                            <span class="req">*</span>First Name:<br>
+                                                              <input type="text" name="fname" id="FirstName" class="cat_textbox" maxlength="255"><br>
+      
+                            <span class="req">*</span> Last Name:<br>
+                                                              <input type="text" name="lname" id="LastName" class="cat_textbox" maxlength="255"><br>
+      
+                            <span class="req">*</span> E-mail:<br>
+                                                              <input type="text" name="email" id="EmailAddress" class="cat_textbox" maxlength="255"><br>
+                        
+                            Comment:<br>
+                                                              <input type="text" name="CAT_Custom_455767" id="CAT_Custom_455767" class="cat_textbox" maxlength="4000"><br>
+      
+                               
+      
+      
+                    
+					                <h2>How many people will be in your party?</h2>
+                            
+                          <span class="req">*</span><br>
+							                                                <input type="radio" name="CAT_Custom_455765" id="CAT_Custom_455765_0" value="2-4">2-4<br />
+                                                              <input type="radio" name="CAT_Custom_455765" id="CAT_Custom_455765_1" value="4-6">4-6<br />
+                                                              <input type="radio" name="CAT_Custom_455765" id="CAT_Custom_455765_2" value="6-8">6-8
+                            
+                           
+                        <h2>Will you need a parking pass?</h2>
+                                                            <p>I need to know by May 1st. This is the deadline<br>
+                                                              for parking passes. Otherwise I have included<br>
+                                                              a map to a parking garage that is close by.
+                                                            <a href="https://www.sanjuan.edu/files/185020/memorial%20auditorium%20parking.pdf"><br>Other Parking</a>
+                                                            (must have PDF to view)
+      </p>
+                            
+                          
+                        Parking Pass:<br>
+                        <span class="req">*</span><br>   
+                                                            <input type="radio" name="CAT_Custom_455766" id="CAT_Custom_455766_0" value="Yes" >Yes<br>
+                                                            <input type="radio" name="CAT_Custom_455766" id="CAT_Custom_455766_1" value="No" >No<br>
+                            
+                                                            <input class="cat_button" type="submit" value="Submit" id="catwebformbutton">
+      
+                                                            <input type="reset" value="Reset">
+       </table>
+                            
+                                                                                                        <script type="text/javascript" src="http://gradanncmnt.businesscatalyst.com/CatalystScripts/ValidationFunctions.js"></script>
+                            
+                            
+                                                                                                        <script type="text/javascript">
+                                                                                        //<![CDATA[
+                                                                                                        var submitcount35154 = 0;
+                                                                                                        
+                                                                                                                function checkWholeForm35154(theForm){
+                                                                                                                              var why = "";
+                                                                                                                                                  if (theForm.FirstName) why += isEmpty(theForm.FirstName.value, "First Name");
+                                                                                                                                                  if (theForm.LastName) why += isEmpty(theForm.LastName.value, "Last Name");
+                                                                                                                                                  if (theForm.EmailAddress) why += checkEmail(theForm.EmailAddress.value);
+                                                                                                                                                         if (theForm.CAT_Custom_455765) why += checkSelected(theForm.CAT_Custom_455765, "How many people will be in your party?");
+                                    
+                                                                                                                                                            if (theForm.CAT_Custom_455766) why += checkSelected(theForm.CAT_Custom_455766, "Will you need a parking pass?");
+                                                                                                                                                            if(why != ""){
+                                                                                                                                                                alert(why);
+                                                                                                                                                                return false;
+                                                                                                                                                            }
+                                                                                                                                                            if(submitcount35154 == 0){submitcount35154++;
+                                                                                                                                                                                      theForm.submit();
+                                                                                                                                                                                      return false;
+                                                                                                                                                                                     }else{
+                                                                                                                                                                                         alert("Form submission is in progress.");
+                                                                                                                                                                                         return false;
+                                                                                                                                                                                     }}
+                                                                                                                        //]]>
+</script>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+           				  
+                        </form>
+
+
+
+
+
+
+
+
+
+</fieldset>
+
+
+		                        <div class="copyright">
+			                                                        <p>&copy; 2014<a href="https://www.facebook.com/webtronixDesigns?ref=hl">WEBTRONIX DESIGNS</a>
+          
+        </p>
+        </div>
+
+</div>
+		<a href="gallery.html">Back to Main Site</a>
+</body>
+</html>
